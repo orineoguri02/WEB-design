@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"> <title>Collection</title>
+        <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+                background-color: black;
+                color: white;
+                overflow-x: hidden;
+
+                font-family: "Workbench", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-variation-settings:
+                "BLED" 0,
+                "SCAN" 0;
+            }
+            nav {
+                position: fixed;
+                padding: 25px 30px;
+                z-index: 10;
+                top:0;
+                left: 0;
+            }
+
+            .logo span {
+                font-size: 24px;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                white-space: nowrap; /* 줄바꿈 방지 */
+            }
+
+            .menuright {
+                position:fixed;
+                top:28px;
+                right:30px;
+                list-style: none;
+                display:flex;
+                gap:20px;
+                margin: 0;
+                padding:0;
+                z-index: 10;
+            }
+            .menuright li a {
+                text-decoration: none;
+                color: white;
+                font: size 18px;
+                padding:10px;
+            }
+
+            .menu_1:hover{color:#00ffc3}
+            .menu_2:hover{color:#00ffc3}
+            span:hover {color:#00ffc3}
+
+
+            .container {
+  position: relative; /* overlay 절대 위치 기준 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 0;
+  height: 100vh;
+}
+
+.media-block {
+  width: 50vw;
+  height: 70vh;
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.media-block img,
+.media-block video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+/* Hover 시 전체 흐림 처리 */
+.container:hover .media-block img,
+.container:hover .media-block video {
+  filter: blur(4px) brightness(0.7);
+}
+
+/* 설명 오버레이 - 이제 전체 컨테이너 위에 덮임 */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  box-sizing: border-box;
+  pointer-events: none; /* 오버레이가 마우스 이벤트 가로채지 않게 */
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay p {
+  color: white;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 100px;
+  border-radius: 8px;
+  line-height: 1.4;
+}
+
+        </style>
+    </head>
+
+    
+    <body>
+        <nav>
+            <a href="index.html" class="logo"><span>25 GD</span></a>
+        </nav>
+
+        <ul class="menuright">
+            <li><a class="menu_1" href="collection.html">Collection</a></li>
+            <li><a class="menu_2" href="final.html">Final</a></li>
+        </ul>
+
+
+        <div class="container" id="mediaContainer">
+    <!-- 이미지 -->
+    <div class="media-block">
+      <img src="Images/f-1.png" alt="Work Image">
+    </div>
+
+    <!-- 영상 -->
+    <div class="media-block">
+      <video src="Images/f-1.mp4" autoplay muted loop playsinline></video>
+    </div>
+
+    <!-- 설명글 오버레이는 여기! -->
+    <div class="overlay">
+      <p>흥 – 묵직한 삶 속에서 피어나는 순간의 생기 <br><br>
+
+‘흥’은 단순한 즐거움이 아닙니다. 한국인에게 흥이란, 버겁고 반복되는 일상 속에서도 문득 피어나는 감정입니다. 장터에서 스쳐 들린 이야기꾼의 소리, 가족과의 사소한 일탈, 밥을 먹으며 잠시 웃는 순간—그 짧고 찬란한 감정이 바로 흥입니다.
+
+나는 전우치 궁중악사의 꽹과리 소리에서 그 리듬을 포착했고, 그 쨍쨍한 금속성의 진동을 시각적으로 표현하고자 했습니다. 포스터는 쇠처럼 묵직하고 단단하면서도, 물처럼 유동적인 질감을 띱니다. 크롬이 흘러내리듯, 표면은 팽팽하게 일그러지고 공간 밖으로 튀어나옵니다.
+
+흥은 무거운 삶의 표면을 뚫고 잠시 드러나는 감정입니다. 나는 그 짧은 생기와 울림을, 쇠와 물이 만나는 경계에서 포착하고자 했습니다.<br>
+(영상의 소리가 안 나서 큐알을 통해 확인해주세요.)
+</p>
+    </div>
+  </div>
+
+      </body>
+</html>

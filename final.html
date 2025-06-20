@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"> <title>Final</title>
+        <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+                background-color: black;
+                color: white;
+                overflow-x: hidden;
+
+                font-family: "Workbench", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-variation-settings:
+                "BLED" 0,
+                "SCAN" 0;
+            }
+            nav {
+                position: fixed;
+                padding: 25px 30px;
+                z-index: 10;
+                top:0;
+                left: 0;
+            }
+
+            .logo span {
+                font-size: 24px;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                white-space: nowrap; /* 줄바꿈 방지 */
+            }
+
+            .menuright {
+                position:fixed;
+                top:28px;
+                right:30px;
+                list-style: none;
+                display:flex;
+                gap:20px;
+                margin: 0;
+                padding:0;
+                z-index: 10;
+            }
+            .menuright li a {
+                text-decoration: none;
+                color: white;
+                font: size 18px;
+                padding:10px;
+            }
+
+            .menu_1:hover{color:#00ffc3}
+            .menu_2:hover{color:#00ffc3}
+            span:hover {color:#00ffc3}
+
+
+           .center-buttons {
+  position: fixed;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 60px; /* 버튼 간격 */
+  z-index: 100;
+}
+
+.choice-button {
+  background: transparent;
+  border: 2px solid white;
+  padding: 10px 24px;
+  font-size: 18px;
+  font-family: "Workbench", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+}
+
+.choice-button a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.choice-button:hover {
+  border-color: #00ffc3;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.choice-button a:hover {
+  color: #00ffc3;
+}
+
+
+
+
+
+
+            
+        </style>
+    </head>
+
+    
+    <body>
+        <nav>
+            <a href="index.html" class="logo"><span>25 GD</span></a>
+        </nav>
+
+        <ul class="menuright">
+            <li><a class="menu_1" href="collection.html">Collection</a></li>
+            <li><a class="menu_2" href="final.html">Final</a></li>
+        </ul>
+
+
+        <div class="center-buttons">
+            <button class="choice-button">
+                <a href="f-1.html">First Work</a>
+            </button>
+            <button class="choice-button">
+                <a href="f-2.html">Second Work</a>
+            </button>
+  </div>
+        </div>
+        
+        
+      </body>
+</html>
